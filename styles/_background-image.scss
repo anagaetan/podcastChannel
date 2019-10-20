@@ -1,0 +1,87 @@
+/* Background Image */
+
+
+.transparentdiv,
+.transparentdiv2 {
+
+    height: 200px;
+    background: transparent;
+}
+
+.transparentdiv2 {
+    display: none;
+}
+
+.container {
+    background-image: url(/images/skymobile1.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 375px) {
+
+    .container {
+        background-image: url(/images/skymobile2.jpg);
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .container {
+        background-image: url(/images/skymobile3.jpg);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+ 
+
+    .transparentdiv,
+    .transparentdiv2 {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .container {
+        background-image: url(/images/sky.jpg);
+    }
+
+}
+
+@media only screen and (min-width: 830px) {
+
+    .container {
+        background-image: url(/images/skydesktop.jpg);
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .container {       
+        background-image: url(/images/skydesktop1.jpg);
+    }
+
+    .transparentdiv2 {
+        display: block;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+ 
+    .container {       
+        background-image: url(/images/skydesktop2.jpg); 
+    }
+}
+
+
+@media only screen and (min-width: 1440px) { 
+
+    .transparentdiv,
+    .transparentdiv2 {
+        height: 350px;
+    }
+}

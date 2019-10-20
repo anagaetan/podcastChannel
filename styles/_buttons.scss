@@ -1,0 +1,43 @@
+%button {
+    padding: 10px;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    transition: opacity 0.8s ease-in-out;
+    text-decoration: none;
+}
+
+%button:hover {
+    opacity: 2;
+}
+
+.btn{
+    &--primary {       
+        background-color: $button-primary;       
+        @extend %button;
+    }
+/*
+    &--secondary {       
+        background-color: $button-secondary;
+        @extend %button;
+    }*/
+}
+
+
+
+
+
+
+    /*box-shadow: rgb(39, 104, 115) 0px 10px 14px -7px;
+    background: linear-gradient(rgb(89, 155, 179) 5%, rgb(64, 140, 153) 100%) rgb(89, 155, 179);
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: rgb(61, 118, 138) 0px 1px 0px;
+*/

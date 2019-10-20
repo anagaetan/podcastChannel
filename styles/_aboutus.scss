@@ -1,0 +1,136 @@
+.aboutus {
+    /*   border: solid rgba(255, 192, 203, 0.123);*/
+    font-size: 16px;
+    padding: 0 2.5em 2em 2.5em;
+    padding-bottom: 4em;
+
+
+    &--title {
+        animation: moveDown 10s ease infinite;
+        text-align: center;
+        font-size: 1.5em;
+        padding-bottom: 0.8em;
+    }
+
+    &--text {
+        animation: moveRight 10s ease infinite;
+
+        p {
+            padding-top: 1em;
+        }
+    }
+}
+
+@keyframes moveRight {
+
+    /*    from {transform: translateX(-30px);}
+    to {transform: translateX(0px);}*/
+    0% {
+        transform: translateX(-30px);
+    }
+
+    10% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+@keyframes moveDown {
+
+    /*   from {transform: translateY(-40px);}
+    to {transform: translateY(0px);}*/
+    0% {
+        transform: translateY(-30px);
+    }
+
+    10% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .aboutus {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 4em 3em 4em;
+
+
+        &--title {
+            /*border: solid rgba(255, 192, 203, 0.075);*/
+            animation: moveRight 10s ease infinite;
+            flex: 0.7;
+            padding-top: 2em;
+        }
+
+        &--text {
+            /*    border: solid rgba(128, 128, 128, 0.041);*/
+            animation: moveDown 10s ease infinite;
+            flex: 1;
+
+            p {
+                padding-top: 0;
+                padding-bottom: 0.3em;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .aboutus {
+
+        font-size: 18px;
+        padding-top: 3em;
+        padding-bottom: 5em;
+
+        &--title {
+            flex: 0.5;
+        }
+
+        &--text {
+            flex: 1;
+
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .aboutus {
+        font-size: 20px;
+        padding-left: 15%;
+        padding-right: 15%;
+
+        &--title {
+            text-align: right;
+            padding-right: 3em;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .aboutus {
+
+        &--title {
+            flex: 0.3;
+
+        }
+    }
+}
