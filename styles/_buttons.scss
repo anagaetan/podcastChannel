@@ -16,11 +16,10 @@
         background-color: $button-primary;       
         @extend %button;
     }
-/*
     &--secondary {       
         background-color: $button-secondary;
         @extend %button;
-    }*/
+    }
 }
 
 
