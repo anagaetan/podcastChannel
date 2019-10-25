@@ -1,18 +1,21 @@
 .episodes {
-/*    border: solid rgba(0, 0, 0, 0.096) 1px;*/
+    /*    border: solid rgba(0, 0, 0, 0.096) 1px;*/
     position: relative;
     background-image: url(/images/episodesvector.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: $color-secondary;
+    color: $color-primary;
     font-size: 16px;
 
-    &--title {        
+    &--title {
         padding-top: 5em;
-        text-align: center;       
+        padding-left: 15%;
+        text-align: left;
         font-size: 1.3em;
         padding-bottom: 2em;
+        font-family: 'IBM Plex Mono', monospace;
+
     }
 
     &--grid {
@@ -25,7 +28,7 @@
     iframe {
         width: 250px;
         margin: 10px;
-    }    
+    }
 }
 
 @media only screen and (min-width: 375px) {
@@ -40,38 +43,54 @@
 
 @media only screen and (min-width: 425px) {
 
-    .episodes {     
+    .episodes {
+
+
         iframe {
             width: 350px;
-        }    
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+    .episodes {
+        &--title {
+            padding-top: 5em;
+            padding-left: 20%;
+        }
     }
 }
 
 @media only screen and (min-width: 600px) {
 
     .episodes {
-        font-size: 17px;     
+        font-size: 17px;
 
         iframe {
             width: 450px;
-        }     
+        }
     }
 }
 
 @media only screen and (min-width: 768px) {
 
     .episodes {
+        &--title {
+            padding-top: 6em;
+
+        }
 
         iframe {
             width: 300px;
             margin: 1em;
-        }      
+        }
     }
 }
 
 @media only screen and (min-width: 900px) {
 
-    .episodes {  
+    .episodes {
         font-size: 18px;
 
         iframe {
@@ -88,7 +107,7 @@
         font-size: 20px;
 
         &--title {
-            padding-top: 4em;
+            padding-top: 5em;
         }
 
         iframe {
@@ -99,11 +118,14 @@
 
 @media only screen and (min-width: 1200px) {
 
-    .episodes {     
-   
+    .episodes {
+
+        &--title {
+            padding-top: 5em;
+        }
+
         iframe {
             width: 450px;
         }
     }
 }
-

@@ -6,7 +6,7 @@
 
     &--image {
         height: 200px;
-        background-image: url(/images/sky.png);
+        background-image: url(~/images/sky.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -20,7 +20,7 @@
     &--content {
 
         padding-bottom: 1.5em;
-
+       
         p {
             padding: 0 2em 1em 2em;
         }
