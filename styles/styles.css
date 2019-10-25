@@ -1,5 +1,16 @@
 /*$color-primary;
 $color-secondary;*/
+/* Old colors
+$button-primary: rgba(13, 110, 139, 0.75);
+$button-secondary: rgba(24, 39, 51, 0.85);
+
+
+$green: #38CC7C;
+$cream: #E3F9C1;
+$clearorange: #DFA06A;
+$orange: #CE6E50;
+$pink: #C75359;
+$gray: #45464b;*/
 .btn--primary, .btn--secondary {
   padding: 10px;
   border: none;
@@ -19,7 +30,13 @@ $color-secondary;*/
 }
 
 .btn--secondary {
-  background-color: rgba(24, 39, 51, 0.85);
+  background-color: #444857cb;
+}
+
+@media only screen and (min-width: 1020px) {
+  .btn--primary, .btn--secondary {
+    font-size: 15px;
+  }
 }
 
 /*box-shadow: rgb(39, 104, 115) 0px 10px 14px -7px;
@@ -108,7 +125,7 @@ h4 {
 .header--navbar--menu--icon {
   display: block;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   padding: 10px;
 }
 
@@ -150,7 +167,7 @@ h4 {
             align-items: center;
   }
   .header--logo {
-    margin-left: 3px;
+    margin-left: 0.5em;
     width: 75px;
   }
   .header--navbar--menu--icon {
@@ -176,8 +193,7 @@ h4 {
     border: none;
   }
   .header--navbar--menu--submenu li:hover {
-    background-color: #848b96;
-    background-color: #38CC7C;
+    background-color: #57a99a;
   }
   .header--navbar--menu--submenu li:hover a {
     color: #fff;
@@ -225,13 +241,19 @@ h4 {
 }
 
 .hero button:hover {
-  background-color: #38CC7C;
+  background-color: #57a99a;
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 375px) {
   .hero--image {
-    background-image: url(/images/skytablet.png);
-    height: 230px;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 470px) {
+  .hero--image {
+    background-position: center;
+    height: 280px;
   }
   .hero--content {
     padding-bottom: 0;
@@ -243,13 +265,14 @@ h4 {
 
 @media only screen and (min-width: 600px) {
   .hero {
+    padding-bottom: 1em;
     font-size: 17px;
   }
   .hero button {
     bottom: -2em;
   }
   .hero--image {
-    height: 270px;
+    background-image: url(/images/skytablet.png);
   }
 }
 
@@ -275,28 +298,36 @@ h4 {
 @media only screen and (min-width: 1024px) {
   .hero {
     font-size: 20px;
+    padding-bottom: 2em;
+  }
+  .hero--title {
+    padding: 2em;
+  }
+  .hero--content {
+    padding: 0 10em 2em 10em;
   }
 }
 
 .episodes {
-  border: solid rgba(0, 0, 0, 0.096) 1px;
+  /*    border: solid rgba(0, 0, 0, 0.096) 1px;*/
   position: relative;
   background-image: url(/images/episodesvector.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #2f333c;
+  font-size: 16px;
 }
 
 .episodes--title {
-  padding-top: 7rem;
+  padding-top: 5em;
   text-align: center;
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
+  font-size: 1.3em;
+  padding-bottom: 2em;
 }
 
 .episodes--grid {
-  padding-bottom: 10rem;
+  padding-bottom: 10em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,19 +350,14 @@ h4 {
 }
 
 @media only screen and (min-width: 425px) {
-  .episodes--title {
-    font-size: 1.6rem;
-    padding-bottom: 2rem;
-  }
   .episodes iframe {
     width: 350px;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .episodes--title {
-    font-size: 1.6rem;
-    padding-bottom: 3rem;
+  .episodes {
+    font-size: 17px;
   }
   .episodes iframe {
     width: 450px;
@@ -341,14 +367,13 @@ h4 {
 @media only screen and (min-width: 768px) {
   .episodes iframe {
     width: 300px;
-    margin: 1rem;
+    margin: 1em;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .episodes--title {
-    font-size: 1.8rem;
-    padding-bottom: 4rem;
+  .episodes {
+    font-size: 18px;
   }
   .episodes iframe {
     width: 360px;
@@ -356,8 +381,11 @@ h4 {
 }
 
 @media only screen and (min-width: 1024px) {
+  .episodes {
+    font-size: 20px;
+  }
   .episodes--title {
-    font-size: 2rem;
+    padding-top: 4em;
   }
   .episodes iframe {
     width: 400px;
@@ -367,13 +395,6 @@ h4 {
 @media only screen and (min-width: 1200px) {
   .episodes iframe {
     width: 450px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .episodes--title {
-    font-size: 2.3rem;
-    padding-bottom: 5rem;
   }
 }
 
@@ -399,6 +420,7 @@ h4 {
 
 .aboutus--text p {
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 @-webkit-keyframes moveRight {
@@ -498,7 +520,7 @@ h4 {
   }
   .aboutus--text p {
     padding-top: 0;
-    padding-bottom: 0.3em;
+    padding-bottom: 1em;
   }
 }
 
@@ -525,10 +547,14 @@ h4 {
     font-size: 20px;
     padding-left: 15%;
     padding-right: 15%;
+    padding-bottom: 4em;
   }
   .aboutus--title {
     text-align: right;
     padding-right: 3em;
+  }
+  .aboutus--text p {
+    padding-bottom: 1.5em;
   }
 }
 
@@ -580,7 +606,7 @@ h4 {
 }
 
 .subscribe--form button:hover {
-  background-color: rgba(24, 39, 51, 0.85);
+  background-color: #444857cb;
 }
 
 @media only screen and (min-width: 375px) {
@@ -684,7 +710,7 @@ h4 {
 }
 
 .topics .grid1 {
-  background: #38CC7C;
+  background: #57a99a;
   background-image: url(/images/300-kids.png);
 }
 
@@ -892,7 +918,7 @@ h4 {
 
 .footer {
   font-size: 22px;
-  background: #38CC7C;
+  background: #57a99a;
   position: relative;
   color: #fff;
   position: relative;

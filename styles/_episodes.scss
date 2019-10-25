@@ -1,21 +1,22 @@
 .episodes {
-    border: solid rgba(0, 0, 0, 0.096) 1px;
+/*    border: solid rgba(0, 0, 0, 0.096) 1px;*/
     position: relative;
     background-image: url(/images/episodesvector.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: $color-primary;
+    color: $color-secondary;
+    font-size: 16px;
 
     &--title {        
-        padding-top: 7rem;
+        padding-top: 5em;
         text-align: center;       
-        font-size: 1.5rem;
-        padding-bottom: 2rem;
+        font-size: 1.3em;
+        padding-bottom: 2em;
     }
 
     &--grid {
-        padding-bottom: 10rem;
+        padding-bottom: 10em;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -30,23 +31,16 @@
 @media only screen and (min-width: 375px) {
 
     .episodes {
-
         iframe {
             width: 300px;
         }
-
     }
 }
 
 
 @media only screen and (min-width: 425px) {
 
-    .episodes {
-        &--title {
-            font-size: 1.6rem;
-            padding-bottom: 2rem;
-        }
-
+    .episodes {     
         iframe {
             width: 350px;
         }    
@@ -56,11 +50,7 @@
 @media only screen and (min-width: 600px) {
 
     .episodes {
-
-        &--title {            
-            font-size: 1.6rem;
-            padding-bottom: 3rem;
-        }
+        font-size: 17px;     
 
         iframe {
             width: 450px;
@@ -74,21 +64,15 @@
 
         iframe {
             width: 300px;
-            margin: 1rem;
-        }
-      
+            margin: 1em;
+        }      
     }
-
 }
 
 @media only screen and (min-width: 900px) {
 
-    .episodes {
-
-        &--title {
-            font-size: 1.8rem;
-            padding-bottom: 4rem;
-        }
+    .episodes {  
+        font-size: 18px;
 
         iframe {
             width: 360px;
@@ -101,9 +85,10 @@
 @media only screen and (min-width: 1024px) {
 
     .episodes {
+        font-size: 20px;
 
         &--title {
-            font-size: 2rem;
+            padding-top: 4em;
         }
 
         iframe {
@@ -114,21 +99,11 @@
 
 @media only screen and (min-width: 1200px) {
 
-    .episodes {
+    .episodes {     
+   
         iframe {
             width: 450px;
         }
     }
 }
 
-@media only screen and (min-width: 1440px) {
-
-    .episodes {
-
-        &--title {
-            font-size: 2.3rem;
-            padding-bottom: 5rem;
-        }
-    }
-
-}

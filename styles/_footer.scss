@@ -2,7 +2,7 @@
     font-size: 22px;
     background: $green;
     position: relative;
-    color:$color-primary;
+    color: $color-primary;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
     &--socialLinks {
@@ -29,7 +29,7 @@
         }
 
         a {
-            color:$color-primary;
+            color: $color-primary;
         }
 
         i {
@@ -37,18 +37,15 @@
             border-radius: 20px;
             padding: 10px;
             background: rgba(0, 0, 0, 0.151);
-          
-            &:hover {                
-               
-            }
-        }    
+
+            &:hover {}
+        }
     }
 
     &--copyrights {
-        font-size: 0.6em;   
-        &:hover {                
-          
-        } 
+        font-size: 0.6em;
+
+        &:hover {}
     }
 }
 
@@ -56,26 +53,26 @@
 @media only screen and (min-width: 768px) {
 
     .footer {
-        font-size: 25px;  
+        font-size: 25px;
 
         &--socialLinks {
-            i{
-                width:50px;
+            i {
+                width: 50px;
             }
+        }
     }
-}  
 }
 
 @media only screen and (min-width: 1020px) {
 
     .footer {
-        font-size: 28px;  
+        font-size: 28px;
 
         &--socialLinks {
-            i{
-                width:55px;
+            i {
+                width: 55px;
             }
+        }
     }
-}
 
 }

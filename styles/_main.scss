@@ -36,13 +36,21 @@
     }
 }
 
+@media only screen and (min-width: 375px) {
 
-@media only screen and (min-width: 425px) {
+    .hero {
+        &--image {          
+            height: 250px;
+        }
+    }
+}
+
+@media only screen and (min-width: 470px) {
 
     .hero {
         &--image {
-            background-image: url(/images/skytablet.png);
-            height: 230px;
+            background-position: center;
+            height: 280px;
         }
 
         &--content {
@@ -59,6 +67,7 @@
 @media only screen and (min-width: 600px) {
 
     .hero {
+        padding-bottom:1em;
         font-size: 17px;
 
         button {
@@ -66,7 +75,8 @@
         }
 
         &--image {
-            height: 270px;
+            background-image: url(/images/skytablet.png);
+      
         }
     }
 }
@@ -76,6 +86,7 @@
 @media only screen and (min-width: 700px) {
 
     .hero {
+      
         &--title {
             padding: 2em;
         }
@@ -105,5 +116,15 @@
 @media only screen and (min-width: 1024px) {
     .hero {
         font-size: 20px;
+        padding-bottom:2em;
+
+        &--title {
+            padding: 2em;
+        }
+
+        &--content {
+            padding: 0 10em 2em 10em;
+        }        
+       
     }
 }
