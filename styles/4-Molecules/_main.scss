@@ -6,12 +6,13 @@
 
     &--image {
         height: 200px;
-        background-image: url(/images/sky.png);
+        background-image: url(/images/sky.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     &--title {
+        font-family: $titles-font;
         font-size: 1.3em;
         padding: 1.5em;
         padding-top: 2em;
@@ -20,7 +21,7 @@
     &--content {
 
         padding-bottom: 1.5em;
-       
+
         p {
             padding: 0 2em 1em 2em;
         }
@@ -30,16 +31,12 @@
         position: relative;
         bottom: -0.5em;
     }
-
-    button:hover {
-        background-color: $green;
-    }
 }
 
 @media only screen and (min-width: 375px) {
 
     .hero {
-        &--image {          
+        &--image {
             height: 250px;
         }
     }
@@ -67,16 +64,15 @@
 @media only screen and (min-width: 600px) {
 
     .hero {
-        padding-bottom:1em;
-        font-size: 17px;
+        padding-bottom: 1em;
 
         button {
             bottom: -2em;
         }
 
         &--image {
-            background-image: url(/images/skytablet.png);
-      
+            background-image: url(/images/skytablet.jpg);
+
         }
     }
 }
@@ -86,7 +82,8 @@
 @media only screen and (min-width: 700px) {
 
     .hero {
-      
+        font-size: 17px;
+
         &--title {
             padding: 2em;
         }
@@ -106,8 +103,9 @@
 @media only screen and (min-width: 800px) {
 
     .hero {
+        font-size: 18px;
         &--image {
-            background-image: url(/images/skydesktop.png);
+            background-image: url(/images/skydesktop.jpg);
             background-position: center;
         }
     }
@@ -116,15 +114,15 @@
 @media only screen and (min-width: 1024px) {
     .hero {
         font-size: 20px;
-        padding-bottom:2em;
+        padding-bottom: 2em;
 
         &--title {
             padding: 2em;
         }
 
         &--content {
-            padding: 0 10em 2em 10em;
-        }        
-       
+            padding: 0 5em 2em 5em;
+        }
+
     }
 }

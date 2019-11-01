@@ -6,15 +6,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 3em 2em;
+    padding: 4em 2em;
 
     &--form {
         background: rgba(0, 0, 0, .05);
-        padding: 1.5em 1em;
+        padding: 2.5em 1em;
         text-align: center;
 
-        &--title {
-            font-family: 'IBM Plex Mono', monospace;
+        &--title {          
             font-size: 1.3em;
             font-weight: normal;
             margin-bottom: 2em;
@@ -26,20 +25,15 @@
             input {
                 padding: 0.3em;
             }
-        }
-
-        button:hover {
-            background-color: $button-secondary;
-        }
+        } 
     }
-
 }
 
 
 @media only screen and (min-width: 375px) {
 
     .subscribe {
-        padding: 3em 3em;
+        padding: 4em 3em;
 
     }
 }
@@ -50,10 +44,10 @@
 
     .subscribe {
 
-        padding: 3em 15%;
+        padding: 4em 15%;
 
         &--form {
-            padding: 2em 1.5em;
+            padding: 3em 1.5em;
         }
 
 
@@ -98,7 +92,7 @@
 @media only screen and (min-width: 1024px) {
 
     .subscribe {
-
+        font-size: 20px;
         padding: 6em 15%;
 
         &--form {
@@ -118,15 +112,5 @@
             }
             
         }
-    }
-}
-
-
-@media only screen and (min-width: 1440px) {
-
-    .subscribe {
-        font-size: 20px;
-      /*  padding: 6em 15%;*/
-
     }
 }
