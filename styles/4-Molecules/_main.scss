@@ -6,7 +6,7 @@
 
     &--image {
         height: 200px;
-        background-image: url("https://github.com/anagaetan/podcastChannel/blob/master/images/sky.jpg?raw=true");
+        background-image: url("https://github.com/anagaetan/podcastChannel/blob/master/images/sky.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -71,7 +71,7 @@
         }
 
         &--image {
-            background-image: url("https://github.com/anagaetan/podcastChannel/blob/master/images/skytablet.jpg?raw=true");
+            background-image: url("https://github.com/anagaetan/podcastChannel/blob/master/images/skytablet.jpg");
 
         }
     }
@@ -105,7 +105,7 @@
     .hero {
         font-size: 18px;
         &--image {
-            background-image: url("https://github.com/anagaetan/podcastChannel/blob/master/images/skydesktop.jpg?raw=true");
+            background-image: url("https://github.com/anagaetan/podcastChannel/blob/master/images/skydesktop.jpg");
             background-position: center;
         }
     }
